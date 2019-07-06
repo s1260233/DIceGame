@@ -4,7 +4,7 @@
 #define MAX 30
 
 int main(){
-  int dice1, dice2, total;
+  int dice1, dice2, dice3, total;
   char name[MAX]; //the max number of name characters is 30
 
   printf("What is your name?\n> ");
@@ -18,13 +18,15 @@ int main(){
 
   dice1 = rand() % 6 + 1;
   dice2 = rand() % 6 + 1;
-  total = dice1 + dice2;
+  dice3 = rand() % 6 + 1;
+  total = dice1 + dice2 + dice3;
 
   printf("Die 1: %d\n", dice1);
   printf("Die 2: %d\n", dice2);
+  printf("Die 3: %d\n", dice3);
   printf("Total value: %d\n", total);
 
-  if(total > 7) printf("%s won!\n", name);
+  if(total > 12) printf("%s won!\n", name);
   else printf("%s lost.\n", name);
   
   return 0;
