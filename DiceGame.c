@@ -1,10 +1,16 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<time.h>
+#define MAX 30
 
 int main(){
   int dice1, dice2, total;
+  char name[MAX]; //the max number of name characters is 30
 
+  printf("What is your name?\n> ");
+  scanf("%s", name);
+  printf("Hello, %s!\n\n", name);
+  
   printf("Rolling the dice...\n");
 
   //initialize random number
